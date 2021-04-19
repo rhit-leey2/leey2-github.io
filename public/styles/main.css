@@ -202,9 +202,7 @@ nav ul, #name {
         float: left;
         margin-bottom: var(--vertical-space);
     }
-
 }
-
 
 @media screen and (min-width: 769px) {
     #name{
