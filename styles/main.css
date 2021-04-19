@@ -145,7 +145,10 @@ body#portfolio ul#portfolioItems {
     max-width: 100%;
     float: center;
     padding: 0px; 
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: justify;
 }
 
 nav{
