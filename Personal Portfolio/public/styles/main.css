@@ -44,6 +44,7 @@ h3 {
     color: (var(--heading-color))
 }
 
+
 a {
     color: var(--body-color);
     text-decoration-color: var(--light-color);
@@ -87,12 +88,12 @@ body>nav ul {
 
 body>nav ul li {
     display: inline-block;
-    padding-right: 1em;
 }
 
 body>* {
     padding-left: var(--horizontal-space);
     padding-right: var(--horizontal-space);
+    padding-bottom: var(--vertical-space);
 }
 
 body>header {
@@ -128,6 +129,10 @@ header {
     padding-bottom: 0;
 }
 
+body#portfolio ul #portText{
+    margin-left: -1em;
+}
+
 body#portfolio ul#portfolioItems {
     display: flex;
     flex-wrap: wrap;
@@ -136,14 +141,55 @@ body#portfolio ul#portfolioItems {
     padding: 0;
 }
 
-body#portfolio ul#portflioItems li img {
+#portImg {
     max-width: 100%;
+    float: center;
+    padding: 0px; 
+    margin: 0px;
 }
 
-@media screen and (min-width: 25em) {
-    body#portfolio ul#portfolioItems li {
+nav{
+    padding-bottom: 1rem;
+}
+
+nav ul, #name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: center;
+   }
+   
+#reveal1 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+             -o-transform: scale(0.9);
+             transform: scale(0.9);
+             -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+             transition: all 1s ease-in-out;
+}
+#reveal1.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+@media screen and (min-width: 640px) {
+    body#portfolio ul#portfolioItems li{
         flex-basis: 48%;
         padding-right: 2%;
+        max-width: 100%;
+    }
+
+    body#portfolio ul#portfolioItems li img{
+        max-width: 100%;
     }
 
     body#about img {
@@ -152,6 +198,7 @@ body#portfolio ul#portflioItems li img {
     }
 
 }
+
 
 @media screen and (min-width: 769px) {
     body {
@@ -173,9 +220,13 @@ body#portfolio ul#portflioItems li img {
         display: block;
     }
 
-   
-
     header h1{
         padding-bottom: 1em;
+    }
+
+    body#portfolio ul#portfolioItems li img{
+        max-height: 280px;
+        max-width: 100%;
+        flex-basis: 48%;
     }
 }
