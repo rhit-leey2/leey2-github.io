@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lyra Lee's Resume</title>
+    <title>Lyra Lee's Portfolio</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -13,6 +13,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="scripts/scrollmagic/ScrollMagic.js"></script>
+    <script type="text/javascript" src="scripts/scrollmagic/plugins/debug.addIndicators.js"></script>
 </head>
 
 <body id="resume">
@@ -27,62 +29,59 @@
         </ul>
     </nav>
     <main>
-        <h1 id = "hresume">Resume</h1>
-        <h2>Objective</h2>
-        <p>Seeking an internship in the field of computer science or software development
-        </p>
+        <div id="trigger1"></div>
+        <h1 id="hresume">Resume</h1>
+        <div id="reveal1" class="resItems">
+            <h2>Objective</h2>
+            <p>Seeking an internship in the field of computer science or software development
+            </p>
+            <div id="trigger1"></div>
+        </div>
 
-        <h2>Education</h2>
-        <h3> <span class="degreeName"> Bachelor of Science, Computer Science and Software Engineering
-            </span> May 2024, GPA 3.6/4.0</h3>
-        <ul>
-            <li>Relevant Courses: Data Structure & Algorithm Analysis, Object-Oriented Software Development,
-                Intro to Web Programming, Intro to Computer Systems, Practical Security</li>
-        </ul>
+        <div id="reveal1" class="resItems">
+            <h2>Education</h2>
+            <h3> <span class="degreeName"> Bachelor of Science, Computer Science and Software Engineering
+                </span> May 2024, GPA 3.6/4.0</h3>
+            <ul>
+                <li>Relevant Courses: Data Structure & Algorithm Analysis, Object-Oriented Software Development,
+                    Intro to Web Programming, Intro to Computer Systems, Practical Security</li>
+            </ul>
 
-        <h3><span class="highschool"> Cheongshim International Academy (CSIA), Gapyeong, South Korea
-            </span> Feb 2020, GPA 3.9/4.0</h3>
-        <ul>
-            <li>Achievements: Annual Honor Roll, Award of Service</li>
-        </ul>
+            <h3><span class="highschool"> Cheongshim International Academy (CSIA), Gapyeong, South Korea
+                </span> Feb 2020, GPA 3.9/4.0</h3>
+            <ul>
+                <li>Achievements: Annual Honor Roll, Award of Service</li>
+                <div id="trigger1"></div>
+            </ul>
+        </div>
 
-        <h2> Honors</h2>
-        <ul>
-            <li>Samsung Humantech Paper Competition, Silver Prize</li>
-            <li>Korea Presidential Science Scholarship, funded by the Republic of Korea</li>
-            <li>Korea Youth Start-up Competition, Grand Prize</li>
-            <li>Dean’s List, Noblitt Scholar, and Rose Hulman Merit Scholar</li>
-        </ul>
+        <div id="reveal1" class="resItems">
+            <h2> Honors</h2>
+            <ul>
+                <li>Samsung Humantech Paper Competition, Silver Prize</li>
+                <li>Korea Presidential Science Scholarship, funded by the Republic of Korea</li>
+                <li>Korea Youth Start-up Competition, Grand Prize</li>
+                <li>Dean’s List, Noblitt Scholar, and Rose Hulman Merit Scholar</li>
+                <div id="trigger1"></div>
+            </ul>
+        </div>
 
-        <h2>Skills</h2>
-        <dl>
-            <dt>Computer:</dt>
-            <dd>Java, JavaScript, C, Python, Linux, SQL, HTML, CSS, JSP, DBMS, jQuery, AJAX, JSON,
-                XML, Kali, Git, R, Maple, Protopie, Xilinx ISE, Microsoft Office Suite</dd>
-            <dt>Personal:</dt>
-            <dd>Problem-solving, Teamwork, Leadership, Communication, Collaboration, Creativity, Initiative</dd>
-
-        </dl>
+        <div id="reveal1" class="resItems">
+            <h2>Skills</h2>
+            <dl>
+                <dt>Computer:</dt>
+                <dd>Java, JavaScript, C, Python, Linux, SQL, HTML, CSS, JSP, DBMS, jQuery, AJAX, JSON,
+                    XML, Kali, Git, R, Maple, Protopie, Xilinx ISE, Microsoft Office Suite</dd>
+                <dt>Personal:</dt>
+                <dd>Problem-solving, Teamwork, Leadership, Communication, Collaboration, Creativity, Initiative</dd>
+                <div id="trigger1"></div>
+            </dl>
+        </div>
 
         <h2>Experience</h2>
-        <!--<ul>
-            <li>
-                <span class="employer">Rose-Hulman Institute of Technology IR/ROP, </span>
-                <span class="dates">Dec 2020 - Feb 2021</span>
-                <span class="title">Deep Learning Lidar 3D Mapping Research Project</span>
-                <span class="location">Terre Haute, IN</span>
-
-                <ul>
-                    <li> Created a program utilizing lidar technology and deep learning that determines the orientation
-                        and shape of an object</li>
-                    <li> Developed a convolutional neural network to train Nvidia Jetson Xavier NX to 3D map an object
-                        distinguishing reference objects with Python</li>
-                </ul>
-            </li>
-        </ul>-->
 
         <ul>
-            <li>
+            <li id="reveal1" class="resItems">
                 <span class="employer">Rose-Hulman Institute of Technology, </span>
                 <span class="dates">Sept 2020 - Nov 2020</span>
                 <span class="title">Capstone Project for Object-Oriented Software Development</span>
@@ -93,12 +92,12 @@
                     <li>Implemented moving objects and stationary objects with animation in JFrame</li>
                     <li>Effectively handled collisions between hero, aliens, platforms, spaceships, and bullets</li>
                 </ul>
-
+                <div id="trigger1"></div>
             </li>
         </ul>
 
         <ul>
-            <li>
+            <li id="reveal1" class="resItems">
                 <span class="employer">Independent Environmental Research,</span>
                 <span class="dates">Mar 2017 - Dec 2018</span>
                 <span class="title">Presenter and Researcher</span>
@@ -113,12 +112,12 @@
                         program to calculate
                         the area ratio of fine dust by utilizing C programming</li>
                 </ul>
-
+                <div id="trigger1"></div>
             </li>
         </ul>
 
         <ul>
-            <li>
+            <li id="reveal1" class="resItems">
                 <span class="employer">CSIA ENIGMA</span>
                 <span class="dates">Mar 2016 - Dec 2019</span>
                 <span class="title">Founder and Leader</span>
@@ -132,25 +131,29 @@
                     <li>Recognized at 1st place with the Grand Prize of the Korea Youth Start-up Competition, leading to
                         a patent in “Medical Supplies Platform Application”</li>
                 </ul>
-
+                <div id="trigger1"></div>
             </li>
         </ul>
 
-        <h2>Activities</h2>
-        <ul>
-            <li>CSIA Cross Country, Team Captain</li>
-            <li>Women of Like Fields Passionate About Computing</li>
-            <li>Computer Security Club</li>
-            <li>RHIT Dance Company</li>
-            <li>Society of Women Engineers</li>
-        </ul>
+        <div id="reveal1" class="resItems">
+            <h2>Activities</h2>
+            <ul>
+                <li>CSIA Cross Country, Team Captain</li>
+                <li>Women of Like Fields Passionate About Computing</li>
+                <li>Computer Security Club</li>
+                <li>RHIT Dance Company</li>
+                <li>Society of Women Engineers</li>
+            </ul>
+        </div>
 
     </main>
     <footer>
         You can email at leey2@rose-hulman.edu.
     </footer>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/ScrollMagic.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
 </body>
 
 </html>
