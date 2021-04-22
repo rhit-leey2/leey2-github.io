@@ -60,10 +60,11 @@ h3 {
     font-weight: 500;
 }
 
-body#about img {
-    height: 15em;
-    display: inline;
-    margin-right: var(--horizontal-space);
+#aboutImg {
+    padding:0px;
+    margin: 0px;
+    max-width: 90%;
+    float: center;
 }
 
 p {
@@ -78,10 +79,9 @@ body {
         "foot foot";
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto auto 1fr auto;
-
 }
 
-body>nav ul {
+body>nav ul{
     list-style-type: none;
     padding: 0;
 }
@@ -129,11 +129,11 @@ header {
     padding-bottom: 0;
 }
 
-body#portfolio ul #portText{
+#portText{
     margin-left: -1em;
 }
 
-body#portfolio ul#portfolioItems {
+#portfolioItems {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
@@ -191,19 +191,22 @@ nav ul, #name {
 
 @media screen and (min-width: 640px) {
     
-    body#portfolio ul#portfolioItems li{
+    #portfolioItems li{
         flex-basis: 48%;
         padding-right: 2%;
         max-width: 100%;
     }
 
-    body#portfolio ul#portfolioItems li img{
+    #portfolioItems li img{
         max-width: 100%;
     }
 
-    body#about img {
+    #aboutImg{
+        display: block;
         float: left;
-        margin-bottom: var(--vertical-space);
+        height: 15em;
+        margin-right: 32px;
+        margin-bottom: 10px;
     }
 }
 
@@ -230,13 +233,14 @@ nav ul, #name {
 
     body>nav ul li {
         display: block;
+
     }
 
     header h1{
         padding-bottom: 1em;
     }
 
-    body#portfolio ul#portfolioItems li img{
+    #portfolioItems li img{
         max-height: 280px;
         max-width: 100%;
         flex-basis: 48%;

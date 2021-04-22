@@ -4,50 +4,264 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lyra Lee's Personal Website</title>
+    <title>Lyra Lee's Portfolio</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="scripts/scrollmagic/ScrollMagic.js"></script>
+    <script type="text/javascript" src="scripts/scrollmagic/plugins/debug.addIndicators.js"></script>
 </head>
 
-<body id="about">
+<body id="ppBody" data-spy="scroll" data-target="#myScrollspy">
+    <div id="trigger2"></div>
     <header>
         <h1 id="name">Lyra Lee</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li id="navLi"><a href="index.html">About</a></li>
-            <li id="navLi"><a href="portfolio.html">Portfolio</a></li>
-            <li id="navLi"><a href="resume.html">Resume</a></li>
+    <nav id="myScrollspy">
+        <ul id = "pin2"> 
+            <!-- set this ul element's id as pin2 -->
+            <li id="navLi" class = "pinItems"><a class="nav-link active" href="#about">About</a></li>
+            <li id="navLi" class = "pinItems"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li id="navLi" class = "pinItems"><a class="nav-link" href="#resume">Resume</a></li>
         </ul>
     </nav>
     <main>
-        <h1 id= "habout">About</h1>
-        <img src="images/me.png" class = "img-fluid">
-        <p id="reveal1">
-            Hi! I'm Lyra Lee.
-        </p>
-        <p id="reveal1">
-            I am an innovator who can scrutinize the reality and transform the solution, converting ideas to impact for
-            the benefit of all.
-        </p>
-        <p id="reveal1">
-            I walked into Computer Science through my educational service for the disabled, after one of my students
-            said, “I dream of becoming a programmer.” The service usually involves teaching basic IT skills such as
-            Microsoft Office, but I went beyond to prepare our own class materials with Scratch and Entry. Even though
-            her intellectual disability hindered her learning, her satisfaction upon getting a taste of coding drove me
-            further to take responsibility and spend ample time thoroughly understanding the codes so I would be fully
-            prepared to teach them.
-        </p>
-        <p id="reveal1">
-            That is when I gradually saw myself intrigued by the infinite capabilities of
-            coding, with an insatiable curiosity and urge to expand across diverse languages and extend my skills.
-        </p>
 
+        <!-- About Me -->
+        <div id="about">
+            <h1 id="habout" class="aboutItems">About</h1>
+            <div id="trigger0"></div>
+            <img src="images/me.png" class="img-fluid aboutItems" id="aboutImg">
+            <p id="reveal1" class="aboutItems">
+                Hi! I'm Lyra Lee.
+            </p>
+            <div id="trigger0" class="spacer s0"></div>
+            <p id="reveal1" class="aboutItems">
+                I am an innovator who can scrutinize the reality and transform the solution, converting ideas to impact
+                for the benefit of all.
+            </p>
+            <div id="trigger0" class="spacer s0"></div>
+            <p id="reveal1" class="aboutItems">
+                I walked into Computer Science through my educational service for the disabled, after one of my students
+                said, “I dream of becoming a programmer.” The service usually involves teaching basic IT skills such as
+                Microsoft Office, but I went beyond to prepare our own class materials with Scratch and Entry. Even
+                though her intellectual disability hindered her learning, her satisfaction upon getting a taste of coding drove
+                me further to take responsibility and spend ample time thoroughly understanding the codes so I would be
+                fully prepared to teach them.
+            </p>
+            <div id="trigger0" class="spacer s0"></div>
+            <p id="reveal1" class="aboutItems">
+                That is when I gradually saw myself intrigued by the infinite capabilities of
+                coding, with an insatiable curiosity and urge to expand across diverse languages and extend my skills.
+            </p>
+        </div>
+        <br>
+        <hr size=3>
+
+        <!-- Portfolio -->
+        <div id="portfolio">
+            <h1 id="hport">Portfolio</h1>
+            <ul id="portfolioItems">
+                <li id="reveal1" class="portItems">
+                    <div id="trigger0" class="spacer s0"></div>
+                    <h2> <a href="#">Project 1</a></h2>
+                    <img src="images/project1.png" id="portImg" class="img-fluid" />
+                    <p>
+                        <ul id="portText">
+                            <li>Collaborated with a team member to redesign the Arcade Game ‘JetPac Man’ with Java</li>
+                            <li>Implemented moving objects and stationary objects with animation in JFrame</li>
+                            <li>Effectively handled collisions between hero, aliens, platforms, spaceships, and bullets
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+
+                <li id="reveal1" class="portItems">
+                    <div id="trigger0" class="spacer s0"></div>
+                    <h2> <a href="#">Project 2</a></h2>
+                    <img src="images/project2-2.png" id="portImg" class="img-fluid" />
+                    <p>
+                        <ul id="portText">
+                            <li>Authored “Mathematical Modeling for Atmospheric Fine-Dust Removal Through the
+                                Photoelectric
+                                Effect of Chlorophyll”</li>
+                            <li> Recognized by Samsung Electronics Co. at second place in Samsung Humantech Paper
+                                Competition</li>
+                            <li> Created a mathematical model to evaluate the efficiency of the photoelectric effect and
+                                a program to calculate the area ratio of fine dust by utilizing C programming</li>
+                        </ul>
+                    </p>
+                </li>
+
+                <li id="reveal1" class="portItems">
+                    <div id="trigger1" class="spacer s0"></div>
+                    <h2> <a href="#">Project 3</a></h2>
+                    <img src="images/project3.png" id="portImg" class="img-fluid" />
+                    <p>
+                        <ul id="portText">
+                            <li>Developed a user-friendly pharmaceutical database application through Protopie, with
+                                accessibility features including pictograms and dictionary-linked translations</li>
+                            <li>Recognized at 1st place with the Grand Prize of the Korea Youth Start-up Competition,
+                                leading to a patent in “Medical Supplies Platform Application”</li>
+                        </ul>
+                    </p>
+                </li>
+                <li id="reveal1" class="portItems">
+                    <div id="trigger1" class="spacer s0"></div>
+                    <h2> <a href="#">Project 4</a></h2>
+                    <img src="images/project4.png" id="portImg" class="img-fluid" />
+                    <p>
+                        <ul id="portText">
+                            <li>Pair programmed to create an informational program through Java in an MVC framework,
+                                that categorizes and provides details of festivals in Korea by numerous search filters such
+                                as month and season</li>
+                            <li>Employed web crawling on a governmental festivals hub website to collect data on their
+                                name, date, location, and description, processing them into a database with Oracle SQL</li>
+                        </ul>
+                    </p>
+                </li>
+                <li id="reveal1" class="portItems">
+                    <h2> <a href="#">Project 5</a></h2>
+                    <img src="images/project5-2.png" id="portImg" class="img-fluid" />
+                    <p>
+                        <ul id="portText">
+                            <li>Brought forth innovative ideas in order to start up a new branch in the company</li>
+                            <li>Devised a business plan to supply the demand of adults learning foreign language</li>
+                            <li>Designed a webpage considering user interface design</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+            <br>
+        </div>
+
+        <hr size=3>
+
+        <!-- Resume -->
+        <div id="resume">
+            <div id="trigger1"></div>
+            <h1 id="hresume">Resume</h1>
+            <div id="reveal1" class="resItems">
+                <h2>Objective</h2>
+                <p>Seeking an internship in the field of computer science or software development
+                </p>
+                <div id="trigger1"></div>
+            </div>
+
+            <div id="reveal1" class="resItems">
+                <h2>Education</h2>
+                <h3> <span class="degreeName"> Bachelor of Science, Computer Science and Software Engineering
+                    </span> May 2024, GPA 3.6/4.0</h3>
+                <ul>
+                    <li>Relevant Courses: Data Structure & Algorithm Analysis, Object-Oriented Software Development,
+                        Intro to Web Programming, Intro to Computer Systems, Practical Security</li>
+                </ul>
+
+                <h3><span class="highschool"> Cheongshim International Academy (CSIA), Gapyeong, South Korea
+                    </span> Feb 2020, GPA 3.9/4.0</h3>
+                <ul>
+                    <li>Achievements: Annual Honor Roll, Award of Service</li>
+                    <div id="trigger1"></div>
+                </ul>
+            </div>
+
+            <div id="reveal1" class="resItems">
+                <h2> Honors</h2>
+                <ul>
+                    <li>Samsung Humantech Paper Competition, Silver Prize</li>
+                    <li>Korea Presidential Science Scholarship, funded by the Republic of Korea</li>
+                    <li>Korea Youth Start-up Competition, Grand Prize</li>
+                    <li>Dean’s List, Noblitt Scholar, and Rose Hulman Merit Scholar</li>
+                    <div id="trigger1"></div>
+                </ul>
+            </div>
+
+            <div id="reveal1" class="resItems">
+                <h2>Skills</h2>
+                <dl>
+                    <dt>Computer:</dt>
+                    <dd>Java, JavaScript, C, Python, Linux, SQL, HTML, CSS, JSP, DBMS, jQuery, AJAX, JSON,
+                        XML, Kali, Git, R, Maple, Protopie, Xilinx ISE, Microsoft Office Suite</dd>
+                    <dt>Personal:</dt>
+                    <dd>Problem-solving, Teamwork, Leadership, Communication, Collaboration, Creativity, Initiative</dd>
+                    <div id="trigger1"></div>
+                </dl>
+            </div>
+
+            <h2>Experience</h2>
+
+            <ul>
+                <li id="reveal1" class="resItems">
+                    <span class="employer">Rose-Hulman Institute of Technology, </span>
+                    <span class="dates">Sept 2020 - Nov 2020</span>
+                    <span class="title">Capstone Project for Object-Oriented Software Development</span>
+                    <span class="location">Terre Haute, IN</span>
+
+                    <ul>
+                        <li>Collaborated with a team member to redesign the Arcade Game ‘JetPac Man’ with Java</li>
+                        <li>Implemented moving objects and stationary objects with animation in JFrame</li>
+                        <li>Effectively handled collisions between hero, aliens, platforms, spaceships, and bullets</li>
+                    </ul>
+                    <div id="trigger1"></div>
+                </li>
+            </ul>
+
+            <ul>
+                <li id="reveal1" class="resItems">
+                    <span class="employer">Independent Environmental Research,</span>
+                    <span class="dates">Mar 2017 - Dec 2018</span>
+                    <span class="title">Presenter and Researcher</span>
+                    <span class="location">Gapyeong, South Korea</span>
+
+                    <ul>
+                        <li>Authored “Mathematical Modeling for Atmospheric Fine-Dust Removal Through the Photoelectric
+                            Effect of Chlorophyll”</li>
+                        <li>Recognized by Samsung Electronics Co. at second place in Samsung Humantech Paper Competition
+                        </li>
+                        <li>Created a mathematical model to evaluate the efficiency of the photoelectric effect and a
+                            program to calculate
+                            the area ratio of fine dust by utilizing C programming</li>
+                    </ul>
+                    <div id="trigger1"></div>
+                </li>
+            </ul>
+
+            <ul>
+                <li id="reveal1" class="resItems">
+                    <span class="employer">CSIA ENIGMA</span>
+                    <span class="dates">Mar 2016 - Dec 2019</span>
+                    <span class="title">Founder and Leader</span>
+                    <span class="location">Gapyeong, South Korea</span>
+
+                    <ul>
+                        <li>Led a social enterprise with the mission to alleviate the disparity in access to medical
+                            information</li>
+                        <li>Developed a user-friendly pharmaceutical database application through Protopie, with
+                            accessibility features including pictograms and dictionary-linked translations</li>
+                        <li>Recognized at 1st place with the Grand Prize of the Korea Youth Start-up Competition,
+                            leading to
+                            a patent in “Medical Supplies Platform Application”</li>
+                    </ul>
+                    <div id="trigger1"></div>
+                </li>
+            </ul>
+
+            <div id="reveal1" class="resItems">
+                <h2>Activities</h2>
+                <ul>
+                    <li>CSIA Cross Country, Team Captain</li>
+                    <li>Women of Like Fields Passionate About Computing</li>
+                    <li>Computer Security Club</li>
+                    <li>RHIT Dance Company</li>
+                    <li>Society of Women Engineers</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
         You can email at leey2@rose-hulman.edu.
@@ -56,8 +270,6 @@
     <script src="scripts/popper.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/bootstrap-material-design.js"></script>
-    <script src="scripts/ScrollMagic.js"></script>
-    </script>
 </body>
 
 </html>
