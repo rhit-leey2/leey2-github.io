@@ -1,275 +1,569 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="font-size: 16px;">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lyra Lee's Portfolio</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="scripts/scrollmagic/ScrollMagic.js"></script>
-    <script type="text/javascript" src="scripts/scrollmagic/plugins/debug.addIndicators.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <!-- <meta name="page_type" content="np-template-header-footer-from-plugin"> -->
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="source_code/index.css">
+  <link rel="stylesheet" href="source_code/Personal-Portfolio.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|PT+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
 </head>
 
-<body id="ppBody" data-spy="scroll" data-target="#myScrollspy">
-    <div id="trigger2"></div>
-    <header>
-        <h1 id="name">Lyra Lee</h1>
-    </header>
-    <nav id="myScrollspy">
-        <ul id = "pin2"> 
-            <!-- set this ul element's id as pin2 -->
-            <li id="navLi" class = "pinItems"><a class="nav-link active" href="#about">About</a></li>
-            <li id="navLi" class = "pinItems"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li id="navLi" class = "pinItems"><a class="nav-link" href="#resume">Resume</a></li>
-        </ul>
-    </nav>
-    <main>
+<body class="u-body u-overlap">
+  <header class="u-clearfix u-header u-sticky u-sticky-65ad u-header">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-color u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
 
-        <!-- About Me -->
-        <div id="about">
-            <h1 id="habout" class="aboutItems">About</h1>
-            <div id="trigger0"></div>
-            <img src="images/me.png" class="img-fluid aboutItems" id="aboutImg">
-            <p id="reveal1" class="aboutItems">
-                Hi! I'm Lyra Lee.
-            </p>
-            <div id="trigger0" class="spacer s0"></div>
-            <p id="reveal1" class="aboutItems">
-                I am an innovator who can scrutinize the reality and transform the solution, converting ideas to impact
-                for the benefit of all.
-            </p>
-            <div id="trigger0" class="spacer s0"></div>
-            <p id="reveal1" class="aboutItems">
-                I walked into Computer Science through my educational service for the disabled, after one of my students
-                said, “I dream of becoming a programmer.” The service usually involves teaching basic IT skills such as
-                Microsoft Office, but I went beyond to prepare our own class materials with Scratch and Entry. Even
-                though her intellectual disability hindered her learning, her satisfaction upon getting a taste of coding drove
-                me further to take responsibility and spend ample time thoroughly understanding the codes so I would be
-                fully prepared to teach them.
-            </p>
-            <div id="trigger0" class="spacer s0"></div>
-            <p id="reveal1" class="aboutItems">
-                That is when I gradually saw myself intrigued by the infinite capabilities of
-                coding, with an insatiable curiosity and urge to expand across diverse languages and extend my skills.
-            </p>
-        </div>
-        <br>
-        <hr size=3>
+            <svg viewBox="0 0 24 24">
+              <use xlink:href="#menu-hamburger"></use>
+            </svg>
 
-        <!-- Portfolio -->
-        <div id="portfolio">
-            <h1 id="hport">Portfolio</h1>
-            <ul id="portfolioItems">
-                <li id="reveal1" class="portItems">
-                    <div id="trigger0" class="spacer s0"></div>
-                    <h2> <a href="#">Project 1</a></h2>
-                    <img src="images/project1.png" id="portImg" class="img-fluid" />
-                    <p>
-                        <ul id="portText">
-                            <li>Collaborated with a team member to redesign the Arcade Game ‘JetPac Man’ with Java</li>
-                            <li>Implemented moving objects and stationary objects with animation in JFrame</li>
-                            <li>Effectively handled collisions between hero, aliens, platforms, spaceships, and bullets
-                            </li>
-                        </ul>
-                    </p>
-                </li>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </symbol>
+              </defs>
+            </svg>
 
-                <li id="reveal1" class="portItems">
-                    <div id="trigger0" class="spacer s0"></div>
-                    <h2> <a href="#">Project 2</a></h2>
-                    <img src="images/project2-2.png" id="portImg" class="img-fluid" />
-                    <p>
-                        <ul id="portText">
-                            <li>Authored “Mathematical Modeling for Atmospheric Fine-Dust Removal Through the
-                                Photoelectric
-                                Effect of Chlorophyll”</li>
-                            <li> Recognized by Samsung Electronics Co. at second place in Samsung Humantech Paper
-                                Competition</li>
-                            <li> Created a mathematical model to evaluate the efficiency of the photoelectric effect and
-                                a program to calculate the area ratio of fine dust by utilizing C programming</li>
-                        </ul>
-                    </p>
-                </li>
-
-                <li id="reveal1" class="portItems">
-                    <div id="trigger1" class="spacer s0"></div>
-                    <h2> <a href="#">Project 3</a></h2>
-                    <img src="images/project3.png" id="portImg" class="img-fluid" />
-                    <p>
-                        <ul id="portText">
-                            <li>Developed a user-friendly pharmaceutical database application through Protopie, with
-                                accessibility features including pictograms and dictionary-linked translations</li>
-                            <li>Recognized at 1st place with the Grand Prize of the Korea Youth Start-up Competition,
-                                leading to a patent in “Medical Supplies Platform Application”</li>
-                        </ul>
-                    </p>
-                </li>
-                <li id="reveal1" class="portItems">
-                    <div id="trigger1" class="spacer s0"></div>
-                    <h2> <a href="#">Project 4</a></h2>
-                    <img src="images/project4.png" id="portImg" class="img-fluid" />
-                    <p>
-                        <ul id="portText">
-                            <li>Pair programmed to create an informational program through Java in an MVC framework,
-                                that categorizes and provides details of festivals in Korea by numerous search filters such
-                                as month and season</li>
-                            <li>Employed web crawling on a governmental festivals hub website to collect data on their
-                                name, date, location, and description, processing them into a database with Oracle SQL</li>
-                        </ul>
-                    </p>
-                </li>
-                <li id="reveal1" class="portItems">
-                    <h2> <a href="#">Project 5</a></h2>
-                    <img src="images/project5-2.png" id="portImg" class="img-fluid" />
-                    <p>
-                        <ul id="portText">
-                            <li>Brought forth innovative ideas in order to start up a new branch in the company</li>
-                            <li>Devised a business plan to supply the demand of adults learning foreign language</li>
-                            <li>Designed a webpage considering user interface design</li>
-                        </ul>
-                    </p>
-                </li>
-            </ul>
-            <br>
+          </a>
         </div>
 
-        <hr size=3>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-custom-font u-nav u-spacing-20 u-text-font u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-75 u-text-hover-custom-color-6"
+                href="#profile" style="padding: 10px;">Profile</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-75 u-text-hover-custom-color-6"
+                href="#experience" style="padding: 10px;">Experience</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-custom-color-1 u-text-grey-75 u-text-hover-custom-color-6"
+                href="#projects" data-page-id="01" style="padding: 10px;">Projects</a>
+            </li>
+          </ul>
+        </div>
 
-        <!-- Resume -->
-        <div id="resume">
-            <div id="trigger1"></div>
-            <h1 id="hresume">Resume</h1>
-            <div id="reveal1" class="resItems">
-                <h2>Objective</h2>
-                <p>Seeking an internship in the field of computer science or software development
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#profile"
+                    style="padding: 10px;">Profile</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#experience"
+                    style="padding: 10px;">Experience</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#projects" data-page-id="01"
+                    style="padding: 10px;">Projects</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+    <style class="u-sticky-style" data-style-id="65ad">
+      .u-sticky-fixed.u-sticky-65ad:before,
+      .u-body.u-sticky-fixed .u-sticky-65ad:before {
+        borders: top right bottom left !important
+      }
+    </style>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="u-align-center u-clearfix u-image u-section-1" id="profile" data-image-width="1280"
+    data-image-height="754">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-custom-font u-font-raleway u-text u-text-custom-color-6 u-text-1">Hello!</h1>
+      <p class="u-large-text u-text u-text-variant u-text-2">I'm <b>Lyra</b>, a sophomore Computer Science student
+      </p>
+      <p class="u-text u-text-3">Rose Hulman Institute of Technology ('24)</p>
+      <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-left-sm u-align-left-xs u-container-style u-layout-cell u-size-18 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <div class="u-border-9 u-border-white u-image u-image-circle u-image-1" data-image-width="413"
+                  data-image-height="531"></div>
+              </div>
+            </div>
+            <div class="u-container-style u-layout-cell u-size-24 u-layout-cell-2">
+              <div class="u-container-layout u-container-layout-2">
+                <h4 class="u-text u-text-4">About me</h4>
+                <p class="u-text u-text-5"> I am an innovator who can scrutinize the reality and transform the solution,
+                  converting ideas to impact<br> for the benefit of all. My interests are Database Systems, Artificial
+                  Intelligence, Machine Learning, software development and
+                  android app/web development.&nbsp;<br>
+                  <br>
                 </p>
-                <div id="trigger1"></div>
+                <p class="u-text u-text-grey-70 u-text-6">leeyu2@rose-hulman.edu</p>
+                <a href="#experience"
+                  class="u-active-black u-align-left u-border-none u-btn u-btn-rectangle u-button-style u-custom-color-6 u-hover-custom-color-5 u-text-active-white u-text-hover-white u-btn-1">learn
+                  more</a>
+              </div>
             </div>
-
-            <div id="reveal1" class="resItems">
-                <h2>Education</h2>
-                <h3> <span class="degreeName"> Bachelor of Science, Computer Science and Software Engineering
-                    </span> May 2024, GPA 3.6/4.0</h3>
-                <ul>
-                    <li>Relevant Courses: Data Structure & Algorithm Analysis, Object-Oriented Software Development,
-                        Intro to Web Programming, Intro to Computer Systems, Practical Security</li>
-                </ul>
-
-                <h3><span class="highschool"> Cheongshim International Academy (CSIA), Gapyeong, South Korea
-                    </span> Feb 2020, GPA 3.9/4.0</h3>
-                <ul>
-                    <li>Achievements: Annual Honor Roll, Award of Service</li>
-                    <div id="trigger1"></div>
-                </ul>
+            <div class="u-container-style u-layout-cell u-size-18 u-layout-cell-3">
+              <div class="u-container-layout u-container-layout-3">
+                <h4 class="u-text u-text-7">Details</h4>
+                <p class="u-text u-text-8">
+                  <span style="font-weight: 700;">Name: </span>
+                  <br>Lyra (Yujung) Lee<br>
+                  <span style="font-weight: 700;">Expected Graduation Date: </span>
+                  <br>May 2024<br><b>Current Location: </b>
+                  <br>Terre Haute, Indiana
+                </p>
+                <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                  <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span
+                      class="u-icon u-icon-circle u-social-facebook u-social-icon u-text-black u-icon-1"><svg
+                        class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+                        <use xlink:href="#svg-15c0"></use>
+                      </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-15c0">
+                        <path fill="currentColor" d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2
+	c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path>
+                      </svg></span>
+                  </a>
+                  <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name"><span
+                      class="u-icon u-icon-circle u-social-icon u-social-twitter u-text-black u-icon-2"><svg
+                        class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+                        <use xlink:href="#svg-65c2"></use>
+                      </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-65c2">
+                        <path fill="currentColor" d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2
+	c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7
+	c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2
+	c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5
+	c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path>
+                      </svg></span>
+                  </a>
+                  <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/name"><span
+                      class="u-icon u-icon-circle u-social-icon u-social-instagram u-text-black u-icon-3"><svg
+                        class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+                        <use xlink:href="#svg-b5dc"></use>
+                      </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b5dc">
+                        <path fill="currentColor" d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z
+	 M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path>
+                        <path fill="#FFFFFF"
+                          d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z">
+                        </path>
+                        <path fill="currentColor" d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7
+	V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7
+	c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path>
+                      </svg></span>
+                  </a>
+                </div>
+              </div>
             </div>
-
-            <div id="reveal1" class="resItems">
-                <h2> Honors</h2>
-                <ul>
-                    <li>Samsung Humantech Paper Competition, Silver Prize</li>
-                    <li>Korea Presidential Science Scholarship, funded by the Republic of Korea</li>
-                    <li>Korea Youth Start-up Competition, Grand Prize</li>
-                    <li>Dean’s List, Noblitt Scholar, and Rose Hulman Merit Scholar</li>
-                    <div id="trigger1"></div>
-                </ul>
-            </div>
-
-            <div id="reveal1" class="resItems">
-                <h2>Skills</h2>
-                <dl>
-                    <dt>Computer:</dt>
-                    <dd>Java, JavaScript, C, Python, Linux, SQL, HTML, CSS, JSP, DBMS, jQuery, AJAX, JSON,
-                        XML, Kali, Git, R, Maple, Protopie, Xilinx ISE, Microsoft Office Suite</dd>
-                    <dt>Personal:</dt>
-                    <dd>Problem-solving, Teamwork, Leadership, Communication, Collaboration, Creativity, Initiative</dd>
-                    <div id="trigger1"></div>
-                </dl>
-            </div>
-
-            <h2>Experience</h2>
-
-            <ul>
-                <li id="reveal1" class="resItems">
-                    <span class="employer">Rose-Hulman Institute of Technology, </span>
-                    <span class="dates">Sept 2020 - Nov 2020</span>
-                    <span class="title">Capstone Project for Object-Oriented Software Development</span>
-                    <span class="location">Terre Haute, IN</span>
-
-                    <ul>
-                        <li>Collaborated with a team member to redesign the Arcade Game ‘JetPac Man’ with Java</li>
-                        <li>Implemented moving objects and stationary objects with animation in JFrame</li>
-                        <li>Effectively handled collisions between hero, aliens, platforms, spaceships, and bullets</li>
-                    </ul>
-                    <div id="trigger1"></div>
-                </li>
-            </ul>
-
-            <ul>
-                <li id="reveal1" class="resItems">
-                    <span class="employer">Independent Environmental Research,</span>
-                    <span class="dates">Mar 2017 - Dec 2018</span>
-                    <span class="title">Presenter and Researcher</span>
-                    <span class="location">Gapyeong, South Korea</span>
-
-                    <ul>
-                        <li>Authored “Mathematical Modeling for Atmospheric Fine-Dust Removal Through the Photoelectric
-                            Effect of Chlorophyll”</li>
-                        <li>Recognized by Samsung Electronics Co. at second place in Samsung Humantech Paper Competition
-                        </li>
-                        <li>Created a mathematical model to evaluate the efficiency of the photoelectric effect and a
-                            program to calculate
-                            the area ratio of fine dust by utilizing C programming</li>
-                    </ul>
-                    <div id="trigger1"></div>
-                </li>
-            </ul>
-
-            <ul>
-                <li id="reveal1" class="resItems">
-                    <span class="employer">CSIA ENIGMA</span>
-                    <span class="dates">Mar 2016 - Dec 2019</span>
-                    <span class="title">Founder and Leader</span>
-                    <span class="location">Gapyeong, South Korea</span>
-
-                    <ul>
-                        <li>Led a social enterprise with the mission to alleviate the disparity in access to medical
-                            information</li>
-                        <li>Developed a user-friendly pharmaceutical database application through Protopie, with
-                            accessibility features including pictograms and dictionary-linked translations</li>
-                        <li>Recognized at 1st place with the Grand Prize of the Korea Youth Start-up Competition,
-                            leading to
-                            a patent in “Medical Supplies Platform Application”</li>
-                    </ul>
-                    <div id="trigger1"></div>
-                </li>
-            </ul>
-
-            <div id="reveal1" class="resItems">
-                <h2>Activities</h2>
-                <ul>
-                    <li>CSIA Cross Country, Team Captain</li>
-                    <li>Women of Like Fields Passionate About Computing</li>
-                    <li>Computer Security Club</li>
-                    <li>RHIT Dance Company</li>
-                    <li>Society of Women Engineers</li>
-                </ul>
-            </div>
+          </div>
         </div>
-    </main>
-    <footer>
-        You can email at leey2@rose-hulman.edu.
-    </footer>
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/popper.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/bootstrap-material-design.js"></script>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-section-2" id="sec-4bab">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <!-- Experience Section -->
+  <section
+    class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-white u-section-3"
+    id="experience">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-text u-title u-text-1">Experience</h1>
+      <div class="u-border-1 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
+      <h3 class="u-align-left-lg u-align-left-md u-align-left-xl u-custom-font u-text u-text-font u-text-2">Education
+      </h3>
+      <div class="u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-left u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-1">
+              <h5 class="u-text u-text-3">Rose Hulman&nbsp;<br>Institute of Technology
+              </h5>
+              <p class="u-custom-font u-font-pt-sans u-text u-text-4">Aug 2020 - Present</p>
+              <div class="u-container-style u-group u-shape-rectangle u-group-1">
+                <div class="u-container-layout u-container-layout-2">
+                  <h5 class="u-custom-font u-text u-text-font u-text-5"><b>Bachelor of Science,&nbsp;</b>
+                    <br><b>Computer Science and Software Engineering</b>
+                  </h5>
+                  <p class="u-custom-font u-font-pt-sans u-text u-text-6">
+                    <i> Relevant Courses</i>: CSSE490 Bio-Inspired Artificial Intelligence, CSSE492 Guided Research:
+                    Evo-Devo NKFL, Operating Systems,
+                    Database Systems, Data Structures and Algorithm Analysis, Android App Development, Object-Oriented
+                    Software Development, Web
+                    Programming, Computer Systems, Digital Systems
+                  </p>
+                  <a href="https://www.rose-hulman.edu/"
+                    class="u-btn u-button-style u-none u-text-custom-color-1 u-btn-1" target="_blank">
+                    <span class="u-text-custom-color-1"></span><span class="u-icon u-text-custom-color-2 u-icon-1"><svg
+                        class="u-svg-content" viewBox="0 0 54.757 54.757" x="0px" y="0px"
+                        style="width: 1em; height: 1em;">
+                        <path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+	L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M27.557,26c-3.859,0-7-3.141-7-7s3.141-7,7-7s7,3.141,7,7
+	S31.416,26,27.557,26z"></path>
+                      </svg><img></span>&nbsp;Terre Haute, IN
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-align-left u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-3">
+              <h5 class="u-text u-text-7">Cheongshim International Academy</h5>
+              <p class="u-custom-font u-font-pt-sans u-text u-text-8">Mar 2014 - Feb 2020</p>
+              <div class="u-container-style u-group u-shape-rectangle u-group-2">
+                <div class="u-container-layout u-container-layout-4">
+                  <h5 class="u-custom-font u-text u-text-font u-text-9">Highschool Diploma</h5>
+                  <p class="u-custom-font u-font-pt-sans u-text u-text-10">Notable Achievements: Honor Roll, Award of
+                    Service every year,<br>Interdisciplinary Data Analysis Competition (1st Place),<br>SK TechX App
+                    Challenge (Semi-Finalists),<br>Multicultural Essay Competition (2nd Place)
+                  </p>
+                  <a href="http://www.csia.hs.kr/" class="u-btn u-button-style u-none u-text-custom-color-1 u-btn-2"
+                    target="_blank"><span class="u-icon u-text-custom-color-1 u-icon-2"><svg class="u-svg-content"
+                        viewBox="0 0 54.757 54.757" x="0px" y="0px" style="width: 1em; height: 1em;">
+                        <path d="M40.94,5.617C37.318,1.995,32.502,0,27.38,0c-5.123,0-9.938,1.995-13.56,5.617c-6.703,6.702-7.536,19.312-1.804,26.952
+	L27.38,54.757L42.721,32.6C48.476,24.929,47.643,12.319,40.94,5.617z M27.557,26c-3.859,0-7-3.141-7-7s3.141-7,7-7s7,3.141,7,7
+	S31.416,26,27.557,26z"></path>
+                      </svg><img></span>&nbsp;Gyeonggi-do, South Korea&nbsp;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-border-1 u-border-grey-dark-1 u-line u-line-horizontal u-line-2"></div>
+      <h3 class="u-align-left-lg u-align-left-md u-align-left-xl u-custom-font u-text u-text-font u-text-11">Honors</h3>
+      <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-col">
+            <div class="u-size-30">
+              <div class="u-layout-row">
+                <div class="u-size-30 u-size-60-md">
+                  <div class="u-layout-row">
+                    <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1">
+                      <div class="u-container-layout u-valign-middle u-container-layout-5">
+                        <img class="u-image u-image-1" src="images/noblitt_scholar_program.png" data-image-width="305"
+                          data-image-height="334">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-size-30 u-size-60-md" style>
+                  <div class="u-layout-col" style>
+                    <div class="u-size-30">
+                      <div class="u-layout-row">
+                        <div class="u-align-left u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
+                          <div class="u-container-layout u-valign-top u-container-layout-6">
+                            <h3 class="u-custom-font u-font-pt-sans u-text u-text-12"><b>Samsung Humantech Paper
+                                Competition, Silver Prize</b> (Feb 2019)
+                            </h3>
+                            <p class="u-text u-text-13"> Authored “Mathematical Modeling for Atmospheric Fine-Dust
+                              Removal Through the Photoelectric Effect of Chlorophyll”</p>
+                          </div>
+                        </div>
+                        <div
+                          class="u-align-left u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-right-cell u-size-30 u-layout-cell-3">
+                          <div class="u-container-layout u-valign-bottom u-container-layout-7">
+                            <img class="u-expanded-width u-image u-image-default u-image-2"
+                              src="images/samsung_humantech.png" data-image-width="1094" data-image-height="1080">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-size-30">
+                      <div class="u-layout-row">
+                        <div
+                          class="u-align-left u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-30 u-image-3"
+                          data-image-width="1440" data-image-height="1080">
+                          <div class="u-container-layout u-container-layout-8"></div>
+                        </div>
+                        <div
+                          class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-white u-layout-cell-5">
+                          <div class="u-container-layout u-container-layout-9">
+                            <h3 class="u-custom-font u-font-pt-sans u-text u-text-14"> Korea Presidential Science
+                              Scholarship<br>
+                              <span style="font-weight: normal;">(May 2020 - Present)</span>
+                            </h3>
+                            <p class="u-text u-text-15">Funded by the Korean Government ($200k)<br>
+                            </p>
+                            <a href="https://www.kosaf.go.kr/eng/jsp/aid/aid02_01_01.jsp"
+                              class="u-btn u-button-style u-none u-text-custom-color-10 u-text-hover-custom-color-11 u-btn-3"
+                              target="_blank">Read More&nbsp;<span class="u-icon">
+                                <svg class="u-svg-content" viewBox="0 -32 426.66667 426"
+                                  style="width: 1em; height: 1em;">
+                                  <path
+                                    d="m213.332031 181.667969c0 4.265625-1.277343 8.53125-3.625 11.730469l-106.667969 160c-3.839843 5.761718-10.238281 9.601562-17.707031 9.601562h-64c-11.730469 0-21.332031-9.601562-21.332031-21.332031 0-4.269531 1.28125-8.535157 3.625-11.734375l98.773438-148.265625-98.773438-148.269531c-2.34375-3.199219-3.625-7.464844-3.625-11.730469 0-11.734375 9.601562-21.335938 21.332031-21.335938h64c7.46875 0 13.867188 3.839844 17.707031 9.601563l106.667969 160c2.347657 3.199218 3.625 7.464844 3.625 11.734375zm0 0">
+                                  </path>
+                                  <path
+                                    d="m426.667969 181.667969c0 4.265625-1.28125 8.53125-3.628907 11.730469l-106.664062 160c-3.839844 5.761718-10.242188 9.601562-17.707031 9.601562h-64c-11.734375 0-21.335938-9.601562-21.335938-21.332031 0-4.269531 1.28125-8.535157 3.628907-11.734375l98.773437-148.265625-98.773437-148.269531c-2.347657-3.199219-3.628907-7.464844-3.628907-11.730469 0-11.734375 9.601563-21.335938 21.335938-21.335938h64c7.464843 0 13.867187 3.839844 17.707031 9.601563l106.664062 160c2.347657 3.199218 3.628907 7.464844 3.628907 11.734375zm0 0">
+                                  </path>
+                                </svg><img></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-30">
+              <div class="u-layout-row">
+                <div class="u-size-30 u-size-60-md">
+                  <div class="u-layout-col">
+                    <div class="u-size-30">
+                      <div class="u-layout-row">
+                        <div
+                          class="u-align-left u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-left-cell u-size-30 u-layout-cell-6">
+                          <div class="u-container-layout u-container-layout-10">
+                            <img class="u-expanded-height u-image u-image-default u-image-4" src="images/echoes.jpg"
+                              data-image-width="907" data-image-height="1080">
+                          </div>
+                        </div>
+                        <div class="u-align-left u-container-style u-layout-cell u-size-30 u-white u-layout-cell-7">
+                          <div class="u-container-layout u-valign-middle u-container-layout-11">
+                            <h3 class="u-custom-font u-font-pt-sans u-text u-text-16">Noblitt Scholars 2024<br>
+                              <span style="font-weight: normal;">(Sep 2020 - Present)</span>
+                            </h3>
+                            <p class="u-text u-text-17">Dean’s List<br>Rose Hulman Merit Scholar
+                            </p>
+                            <a href="https://www.rose-hulman.edu/admissions-and-aid/financial-aid/scholarships-and-grants/noblitt-scholars-program/index.html"
+                              class="u-btn u-button-style u-none u-text-custom-color-9 u-text-hover-palette-2-light-1 u-btn-4"
+                              target="_blank">About the program&nbsp;<span class="u-icon"><svg class="u-svg-content"
+                                  viewBox="0 -32 426.66667 426" style="width: 1em; height: 1em;">
+                                  <path
+                                    d="m213.332031 181.667969c0 4.265625-1.277343 8.53125-3.625 11.730469l-106.667969 160c-3.839843 5.761718-10.238281 9.601562-17.707031 9.601562h-64c-11.730469 0-21.332031-9.601562-21.332031-21.332031 0-4.269531 1.28125-8.535157 3.625-11.734375l98.773438-148.265625-98.773438-148.269531c-2.34375-3.199219-3.625-7.464844-3.625-11.730469 0-11.734375 9.601562-21.335938 21.332031-21.335938h64c7.46875 0 13.867188 3.839844 17.707031 9.601563l106.667969 160c2.347657 3.199218 3.625 7.464844 3.625 11.734375zm0 0">
+                                  </path>
+                                  <path
+                                    d="m426.667969 181.667969c0 4.265625-1.28125 8.53125-3.628907 11.730469l-106.664062 160c-3.839844 5.761718-10.242188 9.601562-17.707031 9.601562h-64c-11.734375 0-21.335938-9.601562-21.335938-21.332031 0-4.269531 1.28125-8.535157 3.628907-11.734375l98.773437-148.265625-98.773437-148.269531c-2.347657-3.199219-3.628907-7.464844-3.628907-11.730469 0-11.734375 9.601563-21.335938 21.335938-21.335938h64c7.464843 0 13.867187 3.839844 17.707031 9.601563l106.664062 160c2.347657 3.199218 3.628907 7.464844 3.628907 11.734375zm0 0">
+                                  </path>
+                                </svg><img></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="u-size-30">
+                      <div class="u-layout-row">
+                        <div
+                          class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-white u-layout-cell-8">
+                          <div class="u-container-layout u-valign-top u-container-layout-12">
+                            <h3 class="u-custom-font u-font-pt-sans u-text u-text-18"> Korea Youth&nbsp;<br>Start-up
+                              Competition, Grand Prize&nbsp;<span style="font-weight: normal;">(Jan 2019)</span>
+                            </h3>
+                            <p class="u-text u-text-19"> Devised a ​pharmaceutical database&nbsp;<span
+                                style="font-weight: 400;">to alleviate the disparity in access to medical
+                                information</span>
+                              <br>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="u-align-left u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-30 u-image-5"
+                          data-image-width="540" data-image-height="960">
+                          <div class="u-container-layout u-container-layout-13"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-size-30 u-size-60-md">
+                  <div class="u-layout-row">
+                    <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-60 u-image-6"
+                      data-image-width="1382" data-image-height="1080">
+                      <div class="u-container-layout u-container-layout-14"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="u-clearfix u-custom-color-8 u-section-4" id="projects">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-col">
+            <div class="u-size-30 u-size-60-md">
+              <div class="u-layout-row">
+                <div
+                  class="u-align-center u-container-style u-layout-cell u-left-cell u-right-cell u-shape-rectangle u-size-60 u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <h2 class="u-text u-text-body-color u-title u-text-1">
+                      <b> Projects</b>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-15 u-size-30-md">
+              <div class="u-layout-row">
+                <div
+                  class="u-align-left u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-20 u-layout-cell-2">
+                  <div class="u-container-layout u-valign-top u-container-layout-2">
+                    <img class="u-expanded-width u-image u-image-1" src="images/bodyclock.png" data-image-width="412"
+                      data-image-height="292">
+                    <h5 class="u-text u-text-body-color u-text-2 project-title"><b>BodyClock, Lifestyle Manager for Irregular
+                        Sleepers</b>
+                    </h5>
+                    <ul class="u-text u-text-body-color u-text-3 project-text">
+                      <li class="l-text exp-text">Language/Environment: <br>Kotlin, Android Studio, Firebase</li>
+                      <li class="exp-text">Created an alternative clock and lifestyle management system for people who have unusual sleep cycles</li>
+                      <li class="exp-text">Designed UI with Figma and employed calendar, switch material and alert dialog from Material Design</li>
+                      <li class="exp-text">Developed the backend with Firebase (Cloud Firestore) to track users’ sleep records and mealtimes to calculate the body clock</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="u-align-left u-container-style u-layout-cell u-shape-rectangle u-size-20 u-layout-cell-3">
+                  <div class="u-container-layout u-container-layout-3">
+                    <img class="u-expanded-width u-image u-image-2"
+                      src="images/a59e3122-2489-4a56-9f36-c44055b266e2.png" data-image-width="832"
+                      data-image-height="570"
+                      data-href="https://drive.google.com/file/d/1tH0nVbmOvcaamoy5RKoskVKULBm_cgIJ/view?usp=sharing"
+                      data-target="_blank">
+                    <h5 class="u-text u-text-body-color u-text-4">Swarm Intelligence<b></b>
+                    </h5>
+                    <p class="u-text u-text-body-color u-text-font u-text-5">Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                  </div>
+                </div>
+                <div
+                  class="u-align-left u-container-style u-layout-cell u-right-cell u-shape-rectangle u-size-20 u-layout-cell-4">
+                  <div class="u-container-layout u-valign-top u-container-layout-4">
+                    <img class="u-expanded-width u-image u-image-3" src="images/l-system.png" data-image-width="531"
+                      data-image-height="480">
+                    <h5 class="u-text u-text-body-color u-text-6"><span class="u-icon"></span>&nbsp;Implementation of
+                      L-Systems
+                    </h5>
+                    <p class="u-text u-text-body-color u-text-font u-text-7">Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-size-15 u-size-30-md">
+              <div class="u-layout-row">
+                <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-white u-layout-cell-5">
+                  <div class="u-container-layout u-valign-top u-container-layout-5">
+                    <img class="u-expanded-width u-image u-image-4"
+                      src="images/7d559d2a-405c-4d7f-919c-e1af7a3031d5.jpeg" imgwidth="700" imgheight="478">
+                    <h5 class="u-text u-text-8"><b><b>Meta-Evolutionary Algorithm for Hyperparameter Tuning</b>
+                        <br></b>
+                    </h5>
+                    <p class="u-text u-text-font u-text-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      nullam nunc justo sagittis suscipit ultrices.</p>
+                  </div>
+                </div>
+                <div class="u-align-left u-container-style u-layout-cell u-size-20 u-white u-layout-cell-6">
+                  <div class="u-container-layout u-container-layout-6">
+                    <img class="u-expanded-width u-image u-image-5"
+                      src="images/fbe9bb5a-bd3a-4b83-85fe-7546119f843b.jpeg" imgwidth="700" imgheight="478">
+                    <h5 class="u-text u-text-10"> Evolutionary-Development in NK Fitness Landscapes</h5>
+                    <p class="u-text u-text-font u-text-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      nullam nunc justo sagittis suscipit ultrices.</p>
+                  </div>
+                </div>
+                <div
+                  class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-white u-layout-cell-7">
+                  <div class="u-container-layout u-valign-top u-container-layout-7">
+                    <img class="u-expanded-width u-image u-image-6"
+                      src="images/8efda566-fb2c-4085-aee4-7494f03579fd.jpeg" imgwidth="700" imgheight="478">
+                    <h5 class="u-text u-text-12">Capstone Project for Object-Oriented Software Development</h5>
+                    <p class="u-text u-text-font u-text-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      nullam nunc justo sagittis suscipit ultrices.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-white" id="sec-195c">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+        <a class="u-social-url" title="facebook" target="_blank"><span
+            class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+              <use xlink:href="#svg-6b87"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6b87">
+              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+            c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
+            </svg></span>
+        </a>
+        <a class="u-social-url" title="twitter" target="_blank"><span
+            class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+              <use xlink:href="#svg-e4ee"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e4ee">
+              <circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+            c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+            c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+            c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+            c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path>
+            </svg></span>
+        </a>
+        <a class="u-social-url" title="instagram" target="_blank"><span
+            class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+              <use xlink:href="#svg-a329"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-a329">
+              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF"
+                d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z">
+              </path>
+              <path fill="#FFFFFF"
+                d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path>
+              <path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+            C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
+            </svg></span>
+        </a>
+        <a class="u-social-url" title="linkedin" target="_blank"><span
+            class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link"
+              preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112">
+              <use xlink:href="#svg-49ca"></use>
+            </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-49ca">
+              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+              <path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+            C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+            H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path>
+            </svg></span>
+        </a>
+      </div>
+      <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1">
+        Contact:<br>leey2@rose-hulman.edu<br>
+      </p>
+    </div>
+  </footer>
+
 </body>
+
+<script type="text/javascript" src="source_code/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="source_code/portfolio_script.js"></script>
 
 </html>
