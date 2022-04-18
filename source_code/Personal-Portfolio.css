@@ -1071,13 +1071,8 @@
 }
 
 .u-section-4 .u-text-4 {
-  margin: 30px 20px 0;
-}
-
-.u-section-4 .u-text-5 {
-  font-style: italic;
-  font-size: 0.875rem;
-  margin: 20px 20px 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .u-section-4 .u-layout-cell-4 {
@@ -1096,14 +1091,10 @@
 }
 
 .u-section-4 .u-text-6 {
-  margin: 20px 20px 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
-.u-section-4 .u-text-7 {
-  font-style: italic;
-  font-size: 0.875rem;
-  margin: 20px 20px 0;
-}
 
 .u-section-4 .u-layout-cell-5 {
   background-position: 0% 0%;
@@ -1125,8 +1116,6 @@
 }
 
 .u-section-4 .u-text-9 {
-  font-style: italic;
-  font-size: 0.875rem;
   margin: 20px 20px 0;
 }
 
@@ -1150,8 +1139,6 @@
 }
 
 .u-section-4 .u-text-11 {
-  font-style: italic;
-  font-size: 0.875rem;
   margin: 20px 20px 0;
 }
 
@@ -1170,12 +1157,10 @@
 }
 
 .u-section-4 .u-text-12 {
-  margin: 31px 20px 0;
+  margin: 20px 20px 0;
 }
 
 .u-section-4 .u-text-13 {
-  font-style: italic;
-  font-size: 0.875rem;
   margin: 20px 20px 0;
 }
 
@@ -1249,8 +1234,8 @@
 
   .u-section-4 .u-text-7 {
     position: relative;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .u-section-4 .u-layout-cell-5 {
@@ -1604,4 +1589,101 @@ margin-bottom: 0px;
 
 .exp-text{
   margin-bottom: 7px;
+}
+
+.figma{
+  color:#fc7464;
+}
+
+.er-diagram, .db-diagram{
+  color:#2A338C;
+}
+
+.code{
+  color:#2A338C;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+#bodyclock{
+  background-color: #2b2853;
+}
+
+.l-text{
+  font-style: italic;
+}
+
+.text {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.light-text{
+  color: white;
+}
+
+.dark-text{
+  color: black;
+}
+
+#blackimg{
+  background-color: black;
+}
+
+#swarming{
+  background-color: #f5c396;
+}
+
+#festival{
+  background-color: #f5c396;
+}
+
+.pro{
+color:#c064fc;
+}
+
+.break{
+  margin-top: 40px;
+}
+
+.alife{
+  color: #16b9a6;
+}
+
+.robots{
+  background-color: #8ba3c6;
+}
+
+.paper{
+  font-style: italic;
+}
+
+.evodevo{
+  color: #0FB3D1;
+}
+
+.chloro{
+  color: #638CBD;
 }
